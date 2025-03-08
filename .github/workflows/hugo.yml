@@ -24,10 +24,6 @@ jobs:
     env:
       HUGO_VERSION: 0.145.0
     steps:
-      - name: Install Git
-        run: |
-          apt-get update && apt-get install -y git
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
