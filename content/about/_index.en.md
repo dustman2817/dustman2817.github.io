@@ -1,20 +1,20 @@
 +++
-title = "关于"
-description = "联系方式"
+title = "About"
+description = "Contact Information"
 date = "2024-03-08"
 aliases = ["about-me", "contact"]
-author = "尘民2817"
+author = "Sean Tian"
 +++
 
 <div class="about-content">
 
-## 联系方式
+## Contact
 
 <div class="contact-list">
 
 GitHub: https://github.com/thesean2817
 
-Email: thesean2817@outlook.com 或 thesean2817@gmail.com
+Email: thesean2817@gmail.com or thesean2817@outlook.com
 
 </div>
 

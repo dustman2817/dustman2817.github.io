@@ -1,0 +1,117 @@
+/* 全局字体设置 */
+:root {
+  --font-family-base: "Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", "Source Han Sans CN", "思源黑体", "PingFang SC", "Microsoft YaHei", "微软雅黑", sans-serif;
+  --font-family-heading: "Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", "Source Han Sans CN", "思源黑体", "PingFang SC", "Microsoft YaHei", "微软雅黑", sans-serif;
+  --font-family-mono: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Monaco, Consolas, monospace;
+  --indent-step: 2em;  /* 定义基础缩进单位 */
+}
+
+/* 基础文本 */
+body {
+  font-family: var(--font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 450;
+}
+
+/* 标题 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+}
+
+/* 代码块 */
+pre, code {
+  font-family: var(--font-family-mono);
+}
+
+/* 导航菜单 */
+.navigation a {
+  font-family: var(--font-family-heading);
+}
+
+/* 文章标题 */
+.post .post-title {
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+}
+
+/* 页脚 */
+.footer {
+  font-family: var(--font-family-base);
+}
+
+/* 改善中文阅读体验 */
+.content article {
+  line-height: 1.8;
+  letter-spacing: 0.015em;
+  font-size: 1rem;
+  font-weight: 450;
+}
+
+/* 优化中文标点符号 */
+.content {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-feature-settings: "halt" 1, "halt" 1;
+}
+
+/* 优化移动端显示 */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .content article {
+    line-height: 1.7;
+  }
+}
+
+/* 关于页面样式 */
+.about-content {
+  padding-left: var(--indent-step);
+}
+
+.about-content h1 {
+  margin-left: calc(-1 * var(--indent-step));  /* 一级标题顶格 */
+}
+
+.about-content h2 {
+  margin-left: 0;  /* 二级标题相对于内容缩进一级 */
+}
+
+.about-content h3 {
+  margin-left: var(--indent-step);  /* 三级标题再缩进一级 */
+}
+
+.about-content h4 {
+  margin-left: calc(2 * var(--indent-step));  /* 四级标题再缩进一级 */
+}
+
+.about-content h5 {
+  margin-left: calc(3 * var(--indent-step));  /* 五级标题再缩进一级 */
+}
+
+.about-content h6 {
+  margin-left: calc(4 * var(--indent-step));  /* 六级标题再缩进一级 */
+}
+
+/* 联系方式样式 */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-left: var(--indent-step);  /* 内容相对于当前标题再缩进一级 */
+}
+
+.contact-list p {
+  position: relative;
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+
+.contact-list p::before {
+  content: "•";
+  position: absolute;
+  left: 0.5em;
+  color: var(--content-link-color);
+} 

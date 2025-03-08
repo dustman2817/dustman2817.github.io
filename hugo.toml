@@ -1,46 +1,130 @@
 baseURL = 'https://thesean2817.github.io/'
-title = '我的个人博客'
+title = "Sean Tian's Blog"
 theme = 'hugo-coder'
-languageCode = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
 
+# Markdown 渲染配置
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      hardWraps = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      wrapStandAloneImageWithinParagraph = false
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+
+[languages]
+  [languages.zh-cn]
+    languageName = "中文"
+    title = "主页"
+    weight = 1
+    [languages.zh-cn.params]
+      description = "尘民2817的个人博客"
+      keywords = "blog,developer,personal,unity,game"
+      author = "尘民2817"
+      footerContent = "保持热爱，永远年轻。"
+      dateFormat = "2006年01月02日"
+      # 翻译文本
+      read = "阅读"
+      readMore = "阅读更多"
+      readingTime = "阅读时间"
+      words = "字"
+      readTime = "分钟"
+      toc = "目录"
+      lastMod = "最后修改"
+      edit = "编辑"
+      previous = "上一页"
+      next = "下一页"
+      share = "分享"
+      poweredBy = "基于"
+      theme = "主题"
+    [[languages.zh-cn.menu.main]]
+      name = "博客"
+      weight = 1
+      url = "posts/"
+    [[languages.zh-cn.menu.main]]
+      name = "分类"
+      weight = 2
+      url = "categories/"
+    [[languages.zh-cn.menu.main]]
+      name = "标签"
+      weight = 3
+      url = "tags/"
+    [[languages.zh-cn.menu.main]]
+      name = "关于"
+      weight = 4
+      url = "about/"
+
+  [languages.en]
+    languageName = "English"
+    title = "Home"
+    weight = 2
+    [languages.en.params]
+      description = "Sean Tian's Personal Blog"
+      keywords = "blog,developer,personal,unity,game"
+      author = "Sean Tian"
+      footerContent = "Stay hungry, stay foolish."
+      dateFormat = "January 2, 2006"
+    [[languages.en.menu.main]]
+      name = "Posts"
+      weight = 1
+      url = "posts/"
+    [[languages.en.menu.main]]
+      name = "Categories"
+      weight = 2
+      url = "categories/"
+    [[languages.en.menu.main]]
+      name = "Tags"
+      weight = 3
+      url = "tags/"
+    [[languages.en.menu.main]]
+      name = "About"
+      weight = 4
+      url = "about/"
+
 [params]
-  author = "博主"
-  info = "Full Stack Developer"
-  description = "我的个人博客"
-  keywords = "blog,developer,personal"
+  author = "Sean Tian"
   avatarURL = "images/avatar.jpg"
-  dateFormat = "2006-01-02"
   
-  # 主题颜色
+  # 主题颜色方案 (auto, light, dark)
   colorScheme = "auto"
   # 隐藏页脚的 Hugo 和主题信息
-  hideCredits = false
+  hideCredits = true
   hideCopyright = false
+  
+  # 启用暗色模式
+  enableDarkMode = true
 
   # 自定义 CSS
-  customCSS = []
+  customCSS = ["css/custom.css"]
   # 自定义 JS
   customJS = []
 
-# 社交链接
-[[params.social]]
+[[languages.zh-cn.params.social]]
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
-  weight = 2
-  url = "https://twitter.com/"
+  url = "https://github.com/thesean2817/"
 
-# 主菜单
-[[menu.main]]
-  name = "博客"
-  weight = 1
-  url  = "posts/"
-[[menu.main]]
-  name = "关于"
+# 中文邮箱（Outlook）
+[[languages.zh-cn.params.social]]
+  name = "Email"
+  icon = "fa fa-envelope fa-2x"
   weight = 2
-  url = "about/"
+  url = "mailto:thesean2817@outlook.com"
+
+[[languages.en.params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/thesean2817/"
+
+# 英文邮箱（Gmail）
+[[languages.en.params.social]]
+  name = "Email"
+  icon = "fa fa-envelope fa-2x"
+  weight = 2
+  url = "mailto:thesean2817@gmail.com"
