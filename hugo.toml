@@ -1,0 +1,46 @@
+baseURL = 'https://thesean2817.github.io/'
+title = '我的个人博客'
+theme = 'hugo-coder'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+
+[params]
+  author = "博主"
+  info = "Full Stack Developer"
+  description = "我的个人博客"
+  keywords = "blog,developer,personal"
+  avatarURL = "images/avatar.jpg"
+  dateFormat = "2006-01-02"
+  
+  # 主题颜色
+  colorScheme = "auto"
+  # 隐藏页脚的 Hugo 和主题信息
+  hideCredits = false
+  hideCopyright = false
+
+  # 自定义 CSS
+  customCSS = []
+  # 自定义 JS
+  customJS = []
+
+# 社交链接
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/"
+
+# 主菜单
+[[menu.main]]
+  name = "博客"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "关于"
+  weight = 2
+  url = "about/"
