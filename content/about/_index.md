@@ -12,9 +12,9 @@ author = "尘民2817"
 
 <div class="contact-list">
 
-GitHub: https://github.com/thesean2817
+GitHub: https://github.com/dustman2817
 
-Email: thesean2817@outlook.com 或 thesean2817@gmail.com
+Email: dustman2817@outlook.com 或 dustman2817@gmail.com
 
 </div>
 

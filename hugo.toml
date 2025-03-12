@@ -1,5 +1,5 @@
-baseURL = 'https://thesean2817.github.io/'
-title = "Sean Tian's Blog"
+baseURL = 'https://dustman2817.github.io/'
+title = "DustMan2817's Blog"
 theme = 'hugo-coder'
 defaultContentLanguage = 'zh-cn'
 
@@ -63,9 +63,9 @@ defaultContentLanguage = 'zh-cn'
     title = "Home"
     weight = 2
     [languages.en.params]
-      description = "Sean Tian's Personal Blog"
+      description = "DustMan2817's Personal Blog"
       keywords = "blog,developer,personal,unity,game"
-      author = "Sean Tian"
+      author = "DustMan2817"
       footerContent = "Stay hungry, stay foolish."
       dateFormat = "January 2, 2006"
     [[languages.en.menu.main]]
@@ -86,7 +86,7 @@ defaultContentLanguage = 'zh-cn'
       url = "about/"
 
 [params]
-  author = "Sean Tian"
+  author = "DustMan2817"
   avatarURL = "images/avatar.jpg"
   
   # 主题颜色方案 (auto, light, dark)
@@ -107,24 +107,24 @@ defaultContentLanguage = 'zh-cn'
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/thesean2817/"
+  url = "https://github.com/dustman2817/"
 
 # 中文邮箱（Outlook）
 [[languages.zh-cn.params.social]]
   name = "Email"
   icon = "fa fa-envelope fa-2x"
   weight = 2
-  url = "mailto:thesean2817@outlook.com"
+  url = "mailto:dustman2817@outlook.com"
 
 [[languages.en.params.social]]
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/thesean2817/"
+  url = "https://github.com/dustman2817/"
 
 # 英文邮箱（Gmail）
 [[languages.en.params.social]]
   name = "Email"
   icon = "fa fa-envelope fa-2x"
   weight = 2
-  url = "mailto:thesean2817@gmail.com"
+  url = "mailto:dustman2817@gmail.com"
